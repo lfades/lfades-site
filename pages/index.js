@@ -1,6 +1,7 @@
 import GithubLogo from '../src/components/GithubLogo';
 import TwitterLogo from '../src/components/TwitterLogo';
 import LinkedInLogo from '../src/components/LinkedInLogo';
+import EmailIcon from '../src/components/EmailIcon';
 
 const Home = () => (
   <div>
@@ -31,6 +32,9 @@ const Home = () => (
         rel="noopener noreferrer"
       >
         <TwitterLogo />
+      </a>
+      <a href="mailto:luisito453@gmail.com" target="_top">
+        <EmailIcon />
       </a>
     </div>
 
