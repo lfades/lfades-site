@@ -1,2 +1,3 @@
-# lfades-site
-My personal site
+# lFades Site
+
+This is my personal site built with Next.js
