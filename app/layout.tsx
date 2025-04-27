@@ -12,9 +12,8 @@ const mapleMono = localFont({
 });
 
 export const metadata: Metadata = {
-	title: "Luis Alvarez | Developer",
-	description: "Personal website and blog of Luis Alvarez, software developer",
-	generator: "v0.dev",
+	title: "LFades | Dev | Always cooking",
+	description: "Personal website of Luis Alvarez.",
 };
 
 export default function RootLayout({
