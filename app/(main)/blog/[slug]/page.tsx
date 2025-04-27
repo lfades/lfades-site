@@ -24,7 +24,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
 	return (
 		<div className="min-h-screen bg-ctp-base text-ctp-text font-mono">
-			<Terminal title={`luis@alvarez: ~/blog/${post.slug}`}>
+			<Terminal path={`~/blog/${post.slug}`}>
 				<div className="p-4">
 					<div className="mb-4 text-ctp-green">
 						<span className="text-ctp-blue">luis@alvarez</span>:

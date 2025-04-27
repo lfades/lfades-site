@@ -32,7 +32,7 @@ export default function ProjectsPage() {
 
 	return (
 		<div className="min-h-screen bg-ctp-base text-ctp-text font-mono">
-			<Terminal title="luis@alvarez: ~/projects">
+			<Terminal path="~/projects">
 				<div className="p-4">
 					<div className="mb-4 text-ctp-green">
 						<span className="text-ctp-blue">luis@alvarez</span>:
