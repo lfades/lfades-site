@@ -18,7 +18,7 @@ export default function AboutPage() {
 						</Link>
 					</div>
 
-					<div className="prose prose-invert max-w-none">
+					<div className="max-w-none">
 						<h1 className="text-2xl font-bold text-ctp-mauve mb-4">About me</h1>
 
 						<p className="mb-4">
