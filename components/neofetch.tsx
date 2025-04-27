@@ -42,9 +42,6 @@ export function Neofetch() {
 					<div className="col-span-3 text-ctp-blue">Theme:</div>
 					<div className="col-span-9 text-ctp-text">Catppuccin</div>
 
-					<div className="col-span-3 text-ctp-blue">WM:</div>
-					<div className="col-span-9 text-ctp-text">Agile, Scrum</div>
-
 					<div className="col-span-3 text-ctp-blue">Terminal:</div>
 					<div className="col-span-9 text-ctp-text">Wezterm</div>
 

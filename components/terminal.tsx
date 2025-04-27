@@ -2,10 +2,10 @@ import type { ReactNode } from "react";
 
 interface TerminalProps {
 	children: ReactNode;
-	title?: string;
+	path?: string;
 }
 
-export function Terminal({ children, title = "luis@lfades" }: TerminalProps) {
+export function Terminal({ children, path }: TerminalProps) {
 	return (
 		<div className="bg-ctp-mantle border border-ctp-surface0 rounded-lg shadow-lg overflow-hidden max-w-4xl mx-auto my-8">
 			<div className="bg-ctp-surface0 px-4 py-2 flex items-center">
@@ -15,7 +15,7 @@ export function Terminal({ children, title = "luis@lfades" }: TerminalProps) {
 					<div className="w-3 h-3 rounded-full inline-block mr-2 bg-ctp-green"></div>
 				</div>
 				<div className="text-ctp-text text-xs flex-grow text-center">
-					{title}
+					luis@lfades{path && `: ${path}`}
 				</div>
 				<div className="w-14"></div>
 			</div>

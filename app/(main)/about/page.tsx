@@ -1,78 +1,91 @@
-import Link from "next/link"
-import { Terminal } from "@/components/terminal"
+import Link from "next/link";
+import { Terminal } from "@/components/terminal";
+import { TerminalLine } from "@/components/terminal-line";
 
 export default function AboutPage() {
-  return (
-    <div className="min-h-screen bg-ctp-base text-ctp-text font-mono">
-      <Terminal title="luis@alvarez: ~/about.md">
-        <div className="p-4">
-          <div className="mb-4 text-ctp-green">
-            <span className="text-ctp-blue">luis@alvarez</span>:<span className="text-ctp-mauve">~</span>$ cat about.md
-          </div>
+	return (
+		<div className="min-h-screen bg-ctp-base text-ctp-text font-mono">
+			<Terminal path="~/about.md">
+				<div className="p-4">
+					<TerminalLine className="mb-4" text="cat about.md" />
 
-          <div className="prose prose-invert max-w-none">
-            <h1 className="text-2xl font-bold text-ctp-mauve mb-4">About Luis Alvarez</h1>
+					<div className="mb-4">
+						<Link
+							href="/"
+							className="text-ctp-mauve hover:text-ctp-lavender hover:underline"
+						>
+							cd ..
+						</Link>
+					</div>
 
-            <p className="mb-4">
-              Hello! I'm Luis, a passionate full-stack developer with a love for creating elegant, efficient, and
-              user-friendly web applications.
-            </p>
+					<div className="prose prose-invert max-w-none">
+						<h1 className="text-2xl font-bold text-ctp-mauve mb-4">About me</h1>
 
-            <h2 className="text-xl font-bold text-ctp-blue mt-6 mb-3">Background</h2>
+						<p className="mb-4">
+							Hello! I'm Luis, a passionate developer that spends his time
+							working with Next.js for work, fun, and <b>for the web</b>.
+						</p>
 
-            <p className="mb-4">
-              With over 5 years of experience in web development, I've worked on a variety of projects ranging from
-              e-commerce platforms to real-time collaborative tools. My journey in tech began with a Computer Science
-              degree, but my passion for building things has kept me continuously learning and exploring new
-              technologies.
-            </p>
+						<h2 className="text-xl font-bold text-ctp-blue mt-6 mb-3">
+							Background
+						</h2>
 
-            <h2 className="text-xl font-bold text-ctp-blue mt-6 mb-3">Skills</h2>
+						<p className="mb-4">
+							I've been programming since school, my first project was a search
+							dashboard for the library of my school that I built with Django.
+							My first job was working for 5 years in my own company, and
+							although it was a finantially irresponsable decision because I was
+							young and stupid, it thought me that I can do anything.
+						</p>
+						<p className="mb-4">
+							I wanted to work at Zeit (now Vercel) so badly because one of the
+							goats I followed was working there, but I also needed to support
+							my family so my second job was at a local agency in Colombia,
+							where I live. This was my first "real" job, where I made friends,
+							went to an office, and played a lot of ping pong.
+						</p>
+						<p className="mb-4">
+							I only lasted in the agency for 4 months, because my dream came
+							true, and now I've been at Vercel for over 6 years and ngl I'm
+							quite happy, relieved, and living the dream.
+						</p>
 
-            <ul className="list-disc pl-5 mb-4">
-              <li>Frontend: React, Next.js, TypeScript, Tailwind CSS</li>
-              <li>Backend: Node.js, Express, NestJS</li>
-              <li>Databases: MongoDB, PostgreSQL, Redis</li>
-              <li>DevOps: Docker, CI/CD, AWS</li>
-              <li>Tools: Git, VS Code, Figma</li>
-            </ul>
+						<h2 className="text-xl font-bold text-ctp-blue mt-6 mb-3">
+							Skills
+						</h2>
+						<p className="mb-4">
+							I consider myself to have a good understanding of how the web
+							works. I can quickly tell you if a site is slow and what can be
+							done to improve it, it's like a vibe at this point. I mostly use
+							TypeScript with Next.js but I've played along with Python, Rust,
+							Lua (thank you Neovim) and right now Blender because I want to
+							make a 3D game.
+						</p>
 
-            <h2 className="text-xl font-bold text-ctp-blue mt-6 mb-3">Philosophy</h2>
+						<h2 className="text-xl font-bold text-ctp-blue mt-6 mb-3">
+							Philosophy
+						</h2>
 
-            <p className="mb-4">
-              I believe in writing clean, maintainable code that solves real problems. My approach to development is
-              centered around understanding user needs and creating solutions that are both technically sound and
-              delightful to use.
-            </p>
+						<p className="mb-4">
+							I aim to be as responsible and useful as possible. That means I
+							work hard and family comes first, because good things come from
+							the sweet of doing something meaningful for something bigger than
+							me.
+						</p>
+					</div>
 
-            <h2 className="text-xl font-bold text-ctp-blue mt-6 mb-3">When I'm Not Coding</h2>
+					<div className="mt-6">
+						<Link
+							href="/"
+							className="text-ctp-mauve hover:text-ctp-lavender hover:underline"
+						>
+							cd ..
+						</Link>
+					</div>
 
-            <p className="mb-4">
-              Outside of work, you'll find me hiking in the mountains, experimenting with new cooking recipes, or diving
-              into a good book. I'm also an avid open-source contributor and enjoy attending tech meetups and
-              conferences.
-            </p>
-
-            <h2 className="text-xl font-bold text-ctp-blue mt-6 mb-3">Let's Connect</h2>
-
-            <p className="mb-4">
-              I'm always open to discussing new projects, technologies, or opportunities. Feel free to reach out through
-              any of the channels listed on my contact page.
-            </p>
-          </div>
-
-          <div className="mt-6">
-            <Link href="/" className="text-ctp-mauve hover:text-ctp-lavender hover:underline">
-              cd ..
-            </Link>
-          </div>
-
-          <div className="mt-4 text-ctp-green">
-            <span className="text-ctp-blue">luis@alvarez</span>:<span className="text-ctp-mauve">~/about.md</span>${" "}
-            <span className="animate-pulse">█</span>
-          </div>
-        </div>
-      </Terminal>
-    </div>
-  )
+					<TerminalLine className="mt-4" path="~/about.md" />
+				</div>
+			</Terminal>
+		</div>
+	);
 }
