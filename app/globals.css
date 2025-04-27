@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Use `data-theme` for dark mode */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 :root {
   --font-mono:
     ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -8,7 +11,7 @@
 }
 
 /* Catppuccin Mocha Colors */
-:root {
+[data-theme="dark"] {
   --ctp-rosewater: #f5e0dc;
   --ctp-flamingo: #f2cdcd;
   --ctp-pink: #f5c2e7;
@@ -37,6 +40,36 @@
   --ctp-crust: #11111b;
 }
 
+/* Catppuccin Latte Colors */
+[data-theme="light"] {
+  --ctp-rosewater: #dc8a78;
+  --ctp-flamingo: #dd7878;
+  --ctp-pink: #ea76cb;
+  --ctp-mauve: #8839ef;
+  --ctp-red: #d20f39;
+  --ctp-maroon: #e64553;
+  --ctp-peach: #fe640b;
+  --ctp-yellow: #df8e1d;
+  --ctp-green: #40a02b;
+  --ctp-teal: #179299;
+  --ctp-sky: #04a5e5;
+  --ctp-sapphire: #209fb5;
+  --ctp-blue: #1e66f5;
+  --ctp-lavender: #7287fd;
+  --ctp-text: #4c4f69;
+  --ctp-subtext1: #5c5f77;
+  --ctp-subtext0: #6c6f85;
+  --ctp-overlay2: #7c7f93;
+  --ctp-overlay1: #8c8fa1;
+  --ctp-overlay0: #9ca0b0;
+  --ctp-surface2: #acb0be;
+  --ctp-surface1: #bcc0cc;
+  --ctp-surface0: #ccd0da;
+  --ctp-base: #eff1f5;
+  --ctp-mantle: #e6e9ef;
+  --ctp-crust: #dce0e8;
+}
+
 body {
   background-color: var(--ctp-base);
   color: var(--ctp-text);
@@ -51,48 +84,30 @@ html {
 }
 
 @theme {
-  --ctp-rosewater: var(--ctp-rosewater);
-  --ctp-flamingo: var(--ctp-flamingo);
-  --ctp-pink: var(--ctp-pink);
-  --ctp-mauve: var(--ctp-mauve);
-  --ctp-red: var(--ctp-red);
-  --ctp-maroon: var(--ctp-maroon);
-  --ctp-peach: var(--ctp-peach);
-  --ctp-yellow: var(--ctp-yellow);
-  --ctp-green: var(--ctp-green);
-  --ctp-teal: var(--ctp-teal);
-  --ctp-sky: var(--ctp-sky);
-  --ctp-sapphire: var(--ctp-sapphire);
-  --ctp-blue: var(--ctp-blue);
-  --ctp-lavender: var(--ctp-lavender);
-  --ctp-text: var(--ctp-text);
-  --ctp-subtext1: var(--ctp-subtext1);
-  --ctp-subtext0: var(--ctp-subtext0);
-  --ctp-overlay2: var(--ctp-overlay2);
-  --ctp-overlay1: var(--ctp-overlay1);
-  --ctp-overlay0: var(--ctp-overlay0);
-  --ctp-surface2: var(--ctp-surface2);
-  --ctp-surface1: var(--ctp-surface1);
-  --ctp-surface0: var(--ctp-surface0);
-  --ctp-base: var(--ctp-base);
-  --ctp-mantle: var(--ctp-mantle);
-  --ctp-crust: var(--ctp-crust);
-}
-
-@layer components {
-  .terminal-window {
-    @apply bg-ctp-mantle border border-ctp-surface0 rounded-lg shadow-lg overflow-hidden;
-  }
-
-  .terminal-header {
-    @apply bg-ctp-surface0 px-4 py-2 flex items-center;
-  }
-
-  .terminal-body {
-    @apply p-4 overflow-auto;
-  }
-
-  .terminal-button {
-    @apply w-3 h-3 rounded-full inline-block mr-2;
-  }
+  --color-ctp-rosewater: var(--ctp-rosewater);
+  --color-ctp-flamingo: var(--ctp-flamingo);
+  --color-ctp-pink: var(--ctp-pink);
+  --color-ctp-mauve: var(--ctp-mauve);
+  --color-ctp-red: var(--ctp-red);
+  --color-ctp-maroon: var(--ctp-maroon);
+  --color-ctp-peach: var(--ctp-peach);
+  --color-ctp-yellow: var(--ctp-yellow);
+  --color-ctp-green: var(--ctp-green);
+  --color-ctp-teal: var(--ctp-teal);
+  --color-ctp-sky: var(--ctp-sky);
+  --color-ctp-sapphire: var(--ctp-sapphire);
+  --color-ctp-blue: var(--ctp-blue);
+  --color-ctp-lavender: var(--ctp-lavender);
+  --color-ctp-text: var(--ctp-text);
+  --color-ctp-subtext1: var(--ctp-subtext1);
+  --color-ctp-subtext0: var(--ctp-subtext0);
+  --color-ctp-overlay2: var(--ctp-overlay2);
+  --color-ctp-overlay1: var(--ctp-overlay1);
+  --color-ctp-overlay0: var(--ctp-overlay0);
+  --color-ctp-surface2: var(--ctp-surface2);
+  --color-ctp-surface1: var(--ctp-surface1);
+  --color-ctp-surface0: var(--ctp-surface0);
+  --color-ctp-base: var(--ctp-base);
+  --color-ctp-mantle: var(--ctp-mantle);
+  --color-ctp-crust: var(--ctp-crust);
 }

@@ -1,23 +1,16 @@
 import Link from "next/link";
 import { Terminal } from "@/components/terminal";
 import { Neofetch } from "@/components/neofetch";
+import { TerminalLine } from "@/components/terminal-line";
 
 export default function Home() {
 	return (
 		<Terminal>
 			<div className="p-4">
-				<div className="mb-2 text-ctp-green">
-					<span className="text-ctp-blue">luis@alvarez</span>:
-					<span className="text-ctp-mauve">~</span>$ home
-				</div>
-
+				<TerminalLine text="home" />
 				<Neofetch />
-
-				<div className="mt-8 text-ctp-green">
-					<span className="text-ctp-blue">luis@alvarez</span>:
-					<span className="text-ctp-mauve">~</span>$ ls
-				</div>
-				<div className="mt-2 grid grid-cols-1 md:grid-cols-2 gap-2">
+				<TerminalLine text="ls" />
+				<div className="mt-2 mb-8 grid grid-cols-1 md:grid-cols-2 gap-2">
 					<Link
 						href="/blog"
 						className="text-ctp-blue hover:text-ctp-lavender hover:underline"
@@ -43,12 +36,7 @@ export default function Home() {
 						contact.sh
 					</Link>
 				</div>
-
-				<div className="mt-8 text-ctp-green">
-					<span className="text-ctp-blue">luis@alvarez</span>:
-					<span className="text-ctp-mauve">~</span>${" "}
-					<span className="animate-pulse">█</span>
-				</div>
+				<TerminalLine />
 			</div>
 		</Terminal>
 	);

@@ -22,7 +22,7 @@ export default function RootLayout({
 			<body
 				className={`${jetbrainsMono.className} bg-ctp-base text-ctp-text min-h-screen`}
 			>
-				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+				<ThemeProvider attribute="data-theme" enableSystem>
 					{children}
 				</ThemeProvider>
 			</body>
