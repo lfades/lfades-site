@@ -1,10 +1,15 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
-const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] });
+const mapleMono = localFont({
+	src: "./MapleMono[wght].ttf",
+	display: "swap",
+	adjustFontFallback: false,
+	variable: "--font-maple-mono",
+});
 
 export const metadata: Metadata = {
 	title: "Luis Alvarez | Developer",
@@ -18,10 +23,12 @@ export default function RootLayout({
 	children: ReactNode;
 }) {
 	return (
-		<html lang="en" suppressHydrationWarning>
-			<body
-				className={`${jetbrainsMono.className} bg-ctp-base text-ctp-text min-h-screen`}
-			>
+		<html
+			lang="en"
+			className={`${mapleMono.variable}`}
+			suppressHydrationWarning
+		>
+			<body className="bg-ctp-base text-ctp-text min-h-screen">
 				<ThemeProvider attribute="data-theme" enableSystem>
 					{children}
 				</ThemeProvider>

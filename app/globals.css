@@ -3,13 +3,6 @@
 /* Use `data-theme` for dark mode */
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-:root {
-  --font-mono:
-    ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-}
-
 /* Catppuccin Mocha Colors */
 [data-theme="dark"] {
   --ctp-rosewater: #f5e0dc;
@@ -84,6 +77,8 @@ html {
 }
 
 @theme {
+  --font-mono: var(--font-maple-mono), Monaco, Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+
   --color-ctp-rosewater: var(--ctp-rosewater);
   --color-ctp-flamingo: var(--ctp-flamingo);
   --color-ctp-pink: var(--ctp-pink);
