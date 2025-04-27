@@ -69,7 +69,7 @@ export default function AboutPage() {
 						<p className="mb-4">
 							I aim to be as responsible and useful as possible. That means I
 							work hard and family comes first, because good things come from
-							the sweet of doing something meaningful for something bigger than
+							the sweat of doing something meaningful for something bigger than
 							me.
 						</p>
 					</div>
