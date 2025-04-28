@@ -17,39 +17,39 @@ export function Neofetch() {
 				</div>
 				<div className="border-b border-ctp-surface0 mb-2"></div>
 
-				<div className="grid grid-cols-12 gap-1">
-					<div className="col-span-3 text-ctp-blue">OS:</div>
-					<div className="col-span-9 text-ctp-text">Web Browser</div>
+				<div className="grid grid-cols-[max-content_1fr] gap-1 gap-x-6">
+					<div className="text-ctp-blue">OS:</div>
+					<div className="text-ctp-text">Web Browser</div>
 
-					<div className="col-span-3 text-ctp-blue">Host:</div>
-					<div className="col-span-9 text-ctp-text">Vercel</div>
+					<div className="text-ctp-blue">Host:</div>
+					<div className="text-ctp-text">Vercel</div>
 
-					<div className="col-span-3 text-ctp-blue">Kernel:</div>
-					<div className="col-span-9 text-ctp-text">Next.js</div>
+					<div className="text-ctp-blue">Kernel:</div>
+					<div className="text-ctp-text">Next.js</div>
 
-					<div className="col-span-3 text-ctp-blue">Uptime:</div>
-					<div className="col-span-9 text-ctp-text">+12 years cooking</div>
+					<div className="text-ctp-blue">Uptime:</div>
+					<div className="text-ctp-text">+12 years cooking</div>
 
-					<div className="col-span-3 text-ctp-blue">Packages:</div>
-					<div className="col-span-9 text-ctp-text">I'll count them later</div>
+					<div className="text-ctp-blue">Packages:</div>
+					<div className="text-ctp-text">I'll count them later</div>
 
-					<div className="col-span-3 text-ctp-blue">Shell:</div>
-					<div className="col-span-9 text-ctp-text">I use neovim btw</div>
+					<div className="text-ctp-blue">Shell:</div>
+					<div className="text-ctp-text">I use neovim btw</div>
 
-					<div className="col-span-3 text-ctp-blue">Resolution:</div>
-					<div className="col-span-9 text-ctp-text">Responsive</div>
+					<div className="text-ctp-blue">Resolution:</div>
+					<div className="text-ctp-text">Responsive</div>
 
-					<div className="col-span-3 text-ctp-blue">Theme:</div>
-					<div className="col-span-9 text-ctp-text">Catppuccin</div>
+					<div className="text-ctp-blue">Theme:</div>
+					<div className="text-ctp-text">Catppuccin</div>
 
-					<div className="col-span-3 text-ctp-blue">Terminal:</div>
-					<div className="col-span-9 text-ctp-text">Wezterm</div>
+					<div className="text-ctp-blue">Terminal:</div>
+					<div className="text-ctp-text">Wezterm</div>
 
-					<div className="col-span-3 text-ctp-blue">Terminal Font:</div>
-					<div className="col-span-9 text-ctp-text">Maple Mono</div>
+					<div className="text-ctp-blue">Font:</div>
+					<div className="text-ctp-text">Maple Mono</div>
 
-					<div className="col-span-3 text-ctp-blue">Memory:</div>
-					<div className="col-span-9 text-ctp-text">
+					<div className="text-ctp-blue">Memory:</div>
+					<div className="text-ctp-text">
 						<Link
 							href="https://github.com/lfades"
 							target="_blank"
@@ -79,7 +79,7 @@ export function Neofetch() {
 					</div>
 				</div>
 
-				<div className="mt-4 grid grid-flow-col auto-cols-[1rem]">
+				<div className="mt-4 grid grid-cols-[repeat(auto-fill,1rem)]">
 					<div className="h-6 bg-ctp-rosewater"></div>
 					<div className="h-6 bg-ctp-flamingo"></div>
 					<div className="h-6 bg-ctp-pink"></div>

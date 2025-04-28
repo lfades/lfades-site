@@ -9,7 +9,7 @@ export default function Home() {
 			<div className="p-4">
 				<TerminalLine text="home" />
 				<Neofetch />
-				<TerminalLine text="ls" />
+				<TerminalLine className="mt-4" text="ls" />
 				<div className="mt-2 mb-8 grid grid-cols-1 md:grid-cols-2 gap-2">
 					{/* <Link */}
 					{/* 	href="/blog" */}
@@ -23,18 +23,22 @@ export default function Home() {
 					{/* > */}
 					{/* 	projects/ */}
 					{/* </Link> */}
-					<Link
-						href="/about"
-						className="text-ctp-blue hover:text-ctp-lavender hover:underline"
-					>
-						about.md
-					</Link>
-					<Link
-						href="/contact"
-						className="text-ctp-blue hover:text-ctp-lavender hover:underline"
-					>
-						contact.sh
-					</Link>
+					<div>
+						<Link
+							href="/about"
+							className="text-ctp-blue hover:text-ctp-lavender underline"
+						>
+							about.md
+						</Link>
+					</div>
+					<div>
+						<Link
+							href="/contact"
+							className="text-ctp-blue hover:text-ctp-lavender underline"
+						>
+							contact.md
+						</Link>
+					</div>
 				</div>
 				<TerminalLine />
 			</div>
