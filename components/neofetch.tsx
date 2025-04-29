@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import lfadesPhoto from "../public/lfades.jpg";
+import { Theme } from "./theme";
 
 export function Neofetch() {
 	return (
@@ -39,8 +40,7 @@ export function Neofetch() {
 					<div className="text-ctp-blue">Resolution:</div>
 					<div className="text-ctp-text">Responsive</div>
 
-					<div className="text-ctp-blue">Theme:</div>
-					<div className="text-ctp-text">Catppuccin</div>
+					<Theme />
 
 					<div className="text-ctp-blue">Terminal:</div>
 					<div className="text-ctp-text">Wezterm</div>
