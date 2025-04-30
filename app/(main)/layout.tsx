@@ -6,8 +6,6 @@ export default function Layout({
 	children: ReactNode;
 }) {
 	return (
-		<div className="min-h-screen bg-ctp-base text-ctp-text font-mono">
-			{children}
-		</div>
+		<div className="min-h-screen bg-pane text-text font-mono">{children}</div>
 	);
 }

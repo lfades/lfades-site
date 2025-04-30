@@ -5,62 +5,86 @@
 
 /* Catppuccin Mocha Colors */
 [data-theme="dark"] {
-  --ctp-rosewater: #f5e0dc;
-  --ctp-flamingo: #f2cdcd;
-  --ctp-pink: #f5c2e7;
-  --ctp-mauve: #cba6f7;
-  --ctp-red: #f38ba8;
-  --ctp-maroon: #eba0ac;
-  --ctp-peach: #fab387;
-  --ctp-yellow: #f9e2af;
-  --ctp-green: #a6e3a1;
-  --ctp-teal: #94e2d5;
-  --ctp-sky: #89dceb;
-  --ctp-sapphire: #74c7ec;
-  --ctp-blue: #89b4fa;
-  --ctp-lavender: #b4befe;
-  --ctp-text: #cdd6f4;
-  --ctp-subtext1: #bac2de;
-  --ctp-subtext0: #a6adc8;
-  --ctp-overlay2: #9399b2;
-  --ctp-overlay1: #7f849c;
-  --ctp-overlay0: #6c7086;
-  --ctp-surface2: #585b70;
-  --ctp-surface1: #45475a;
-  --ctp-surface0: #313244;
-  --ctp-base: #1e1e2e;
-  --ctp-mantle: #181825;
-  --ctp-crust: #11111b;
+  --theme-accent-1: #f5e0dc; /* rosewater */
+  --theme-accent-2: #f2cdcd; /* flamingo */
+  --theme-accent-3: #f5c2e7; /* pink */
+  --theme-accent-4: #cba6f7; /* mauve */
+
+  --theme-danger: #f38ba8; /* red */
+  --theme-danger-1: #eba0ac; /* maroon */
+  --theme-attention: #fab387; /* peach */
+  --theme-warning: #f9e2af; /* yellow */
+  --theme-success: #a6e3a1; /* green */
+
+  --theme-info-1: #94e2d5; /* teal */
+  --theme-info-2: #89dceb; /* sky */
+
+  --theme-color-1: #74c7ec; /* sapphire */ 
+  --theme-color-2: #89b4fa; /* blue */ 
+  --theme-color-3: #b4befe; /* lavender */ 
+
+  --theme-text: #cdd6f4; /* text */
+  --theme-text-1: #bac2de; /* subtext1 */
+  --theme-text-2: #a6adc8; /* subtext0 */
+
+  --theme-overlay: #9399b2; /* overlay2 */
+  --theme-overlay-1: #7f849c; /* overlay1 */
+  --theme-overlay-2: #6c7086; /* overlay0 */
+
+  --theme-surface: #585b70; /* surface2 */
+  --theme-surface-1: #45475a;/* surface1 */
+  --theme-surface-2: #313244;/* surface0 */
+
+  --theme-pane: #1e1e2e; /* base */
+  --theme-pane-1: #181825; /* mantle */
+  --theme-pane-2: #11111b; /* crust */
+  
+  --theme-link: var(--theme-color-2);
+  --theme-link-active: var(--theme-color-3);
+  --theme-link-hover: var(--theme-info-2);
+  --theme-cursor: var(--theme-accent-1);
 }
 
 /* Catppuccin Latte Colors */
 [data-theme="light"] {
-  --ctp-rosewater: #dc8a78;
-  --ctp-flamingo: #dd7878;
-  --ctp-pink: #ea76cb;
-  --ctp-mauve: #8839ef;
-  --ctp-red: #d20f39;
-  --ctp-maroon: #e64553;
-  --ctp-peach: #fe640b;
-  --ctp-yellow: #df8e1d;
-  --ctp-green: #40a02b;
-  --ctp-teal: #179299;
-  --ctp-sky: #04a5e5;
-  --ctp-sapphire: #209fb5;
-  --ctp-blue: #1e66f5;
-  --ctp-lavender: #7287fd;
-  --ctp-text: #4c4f69;
-  --ctp-subtext1: #5c5f77;
-  --ctp-subtext0: #6c6f85;
-  --ctp-overlay2: #7c7f93;
-  --ctp-overlay1: #8c8fa1;
-  --ctp-overlay0: #9ca0b0;
-  --ctp-surface2: #acb0be;
-  --ctp-surface1: #bcc0cc;
-  --ctp-surface0: #ccd0da;
-  --ctp-base: #eff1f5;
-  --ctp-mantle: #e6e9ef;
-  --ctp-crust: #dce0e8;
+  --theme-accent-1: #dc8a78; /* rosewater */
+  --theme-accent-2: #dd7878; /* flamingo */
+  --theme-accent-3: #ea76cb; /* pink */
+  --theme-accent-4: #8839ef; /* mauve */
+
+  --theme-danger: #d20f39; /* red */
+  --theme-danger-1: #e64553; /* maroon */
+  --theme-attention: #fe640b; /* peach */
+  --theme-warning: #df8e1d; /* yellow */
+  --theme-success: #40a02b; /* green */
+
+  --theme-info-1: #179299; /* teal */
+  --theme-info-2: #04a5e5; /* sky */
+
+  --theme-color-1: #209fb5; /* sapphire */
+  --theme-color-2: #1e66f5; /* blue */
+  --theme-color-3: #7287fd; /* lavender */
+
+  --theme-text: #4c4f69; /* text */
+  --theme-text-1: #5c5f77; /* subtext1 */
+  --theme-text-2: #6c6f85; /* subtext0 */
+
+  --theme-overlay: #7c7f93; /* overlay2 */
+  --theme-overlay-1: #8c8fa1; /* overlay1 */
+  --theme-overlay-2: #9ca0b0; /* overlay0 */
+
+  --theme-surface: #acb0be; /* surface2 */
+  --theme-surface-1: #bcc0cc; /* surface1 */
+  --theme-surface-2: #ccd0da; /* surface0 */
+
+  --theme-pane: #eff1f5; /* base */
+  --theme-pane-1: #e6e9ef; /* mantle */
+  --theme-pane-2: #dce0e8; /* crust */
+
+  --theme-link: var(--theme-color-2);
+  --theme-link-active: var(--theme-color-3);
+  --theme-link-hover: var(--theme-info-2);
+  --theme-cursor: var(--theme-accent-1);
 }
 
 body {
@@ -79,30 +103,42 @@ html {
 @theme {
   --font-mono: var(--font-maple-mono), Monaco, Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
 
-  --color-ctp-rosewater: var(--ctp-rosewater);
-  --color-ctp-flamingo: var(--ctp-flamingo);
-  --color-ctp-pink: var(--ctp-pink);
-  --color-ctp-mauve: var(--ctp-mauve);
-  --color-ctp-red: var(--ctp-red);
-  --color-ctp-maroon: var(--ctp-maroon);
-  --color-ctp-peach: var(--ctp-peach);
-  --color-ctp-yellow: var(--ctp-yellow);
-  --color-ctp-green: var(--ctp-green);
-  --color-ctp-teal: var(--ctp-teal);
-  --color-ctp-sky: var(--ctp-sky);
-  --color-ctp-sapphire: var(--ctp-sapphire);
-  --color-ctp-blue: var(--ctp-blue);
-  --color-ctp-lavender: var(--ctp-lavender);
-  --color-ctp-text: var(--ctp-text);
-  --color-ctp-subtext1: var(--ctp-subtext1);
-  --color-ctp-subtext0: var(--ctp-subtext0);
-  --color-ctp-overlay2: var(--ctp-overlay2);
-  --color-ctp-overlay1: var(--ctp-overlay1);
-  --color-ctp-overlay0: var(--ctp-overlay0);
-  --color-ctp-surface2: var(--ctp-surface2);
-  --color-ctp-surface1: var(--ctp-surface1);
-  --color-ctp-surface0: var(--ctp-surface0);
-  --color-ctp-base: var(--ctp-base);
-  --color-ctp-mantle: var(--ctp-mantle);
-  --color-ctp-crust: var(--ctp-crust);
+  --color-accent-1: var(--theme-accent-1);
+  --color-accent-2: var(--theme-accent-2);
+  --color-accent-3: var(--theme-accent-3);
+  --color-accent-4: var(--theme-accent-4);
+
+  --color-danger: var(--theme-danger);
+  --color-danger-1: var(--theme-danger-1);
+  --color-attention: var(--theme-attention);
+  --color-warning: var(--theme-warning);
+  --color-success: var(--theme-success);
+
+  --color-info-1: var(--theme-info-1);
+  --color-info-2: var(--theme-info-2);
+
+  --color-1: var(--theme-color-1);
+  --color-2: var(--theme-color-2);
+  --color-3: var(--theme-color-3);
+
+  --color-text: var(--theme-text);
+  --color-text-1: var(--theme-text-1);
+  --color-text-2: var(--theme-text-2);
+
+  --color-overlay: var(--theme-overlay);
+  --color-overlay-1: var(--theme-overlay-1);
+  --color-overlay-2: var(--theme-overlay-2);
+
+  --color-surface: var(--theme-surface);
+  --color-surface-1: var(--theme-surface-1);
+  --color-surface-2: var(--theme-surface-2);
+
+  --color-pane: var(--theme-pane);
+  --color-pane-1: var(--theme-pane-1);
+  --color-pane-2: var(--theme-pane-2);
+
+  --color-link: var(--theme-link);
+  --color-link-active: var(--theme-link-active);
+  --color-link-hover: var(--theme-link-hover);
+  --color-cursor: var(--theme-cursor);
 }

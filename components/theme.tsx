@@ -7,11 +7,11 @@ export function Theme() {
 	const { theme, setTheme } = useTheme();
 	return (
 		<>
-			<div className="text-ctp-blue">Theme:</div>
-			<div className="text-ctp-text flex">
+			<div className="text-1">Theme:</div>
+			<div className="flex">
 				Catppuccin{" "}
 				<SunMoon
-					className="ml-2 text-ctp-blue hover:text-ctp-lavender rounded-full cursor-pointer"
+					className="ml-2 text-link hover:text-link-hover rounded-full cursor-pointer"
 					onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
 				/>
 			</div>

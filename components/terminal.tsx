@@ -7,14 +7,14 @@ interface TerminalProps {
 
 export function Terminal({ children, path }: TerminalProps) {
 	return (
-		<div className="bg-ctp-mantle border border-ctp-surface0 rounded-lg shadow-lg overflow-hidden max-w-4xl mx-auto my-8">
-			<div className="bg-ctp-surface0 px-4 py-2 flex items-center">
+		<div className="bg-pane-1 border border-surface-2 rounded-lg shadow-lg overflow-hidden max-w-4xl mx-auto my-8">
+			<div className="bg-surface-2 px-4 py-2 flex items-center">
 				<div className="flex space-x-2 items-center w-14">
-					<div className="w-3 h-3 rounded-full inline-block mr-2 bg-ctp-red"></div>
-					<div className="w-3 h-3 rounded-full inline-block mr-2 bg-ctp-yellow"></div>
-					<div className="w-3 h-3 rounded-full inline-block mr-2 bg-ctp-green"></div>
+					<div className="w-3 h-3 rounded-full inline-block mr-2 bg-danger"></div>
+					<div className="w-3 h-3 rounded-full inline-block mr-2 bg-warning"></div>
+					<div className="w-3 h-3 rounded-full inline-block mr-2 bg-success"></div>
 				</div>
-				<div className="text-ctp-text text-xs flex-grow text-center">
+				<div className="text-xs flex-grow text-center">
 					luis@lfades{path && `: ${path}`}
 				</div>
 				<div className="w-14"></div>

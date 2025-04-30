@@ -6,9 +6,13 @@ export function TerminalLine({
 	className,
 }: { path?: string; text?: string; className?: string }) {
 	return (
-		<div className={cn("mb-2 text-ctp-green", className)}>
-			<span className="text-ctp-blue">luis@lfades</span>:
-			<span className="text-ctp-mauve">{path}</span>$ {text || "█"}
+		<div className={cn("mb-2 text-success", className)}>
+			<span className="text-3">luis@lfades</span>:
+			<span className="text-accent-4">{path}</span>$ {text || <Cursor />}
 		</div>
 	);
+}
+
+function Cursor() {
+	return <span className="text-cursor">█</span>;
 }

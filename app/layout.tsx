@@ -27,7 +27,7 @@ export default function RootLayout({
 			className={`${mapleMono.variable}`}
 			suppressHydrationWarning
 		>
-			<body className="bg-ctp-base text-ctp-text min-h-screen">
+			<body className="bg-pane text-text min-h-screen">
 				<ThemeProvider attribute="data-theme" enableSystem>
 					{children}
 				</ThemeProvider>
