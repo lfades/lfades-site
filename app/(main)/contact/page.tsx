@@ -11,21 +11,21 @@ export default function ContactPage() {
 					<TerminalLine className="mb-4" text="cat contact.md" />
 
 					<div className="mb-6">
-						<h1 className="text-2xl font-bold text-ctp-mauve mb-4">
+						<h1 className="text-2xl font-bold text-accent-4 mb-4">
 							Contact Me
 						</h1>
 
 						<p className="mb-6">Feel free to reach out! </p>
 
 						<div className="mb-8 space-y-4">
-							<h2 className="text-xl font-bold text-ctp-blue">Social</h2>
+							<h2 className="text-xl font-bold text-accent-2">Social</h2>
 
 							<div className="space-y-3">
 								<a
 									href="mailto:me@lfades.com"
-									className="flex items-center gap-2 text-ctp-text hover:text-ctp-lavender"
+									className="flex items-center gap-2 text-link hover:text-link-hover"
 								>
-									<Mail className="h-5 w-5 text-ctp-mauve" />
+									<Mail className="h-5 w-5 text-accent-4" />
 									<span>me@lfades.com</span>
 								</a>
 
@@ -33,9 +33,9 @@ export default function ContactPage() {
 									href="https://github.com/lfades"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex items-center gap-2 text-ctp-text hover:text-ctp-lavender"
+									className="flex items-center gap-2 text-link hover:text-link-hover"
 								>
-									<Github className="h-5 w-5 text-ctp-mauve" />
+									<Github className="h-5 w-5 text-accent-4" />
 									<span>github.com/lfades</span>
 								</a>
 
@@ -43,9 +43,9 @@ export default function ContactPage() {
 									href="https://www.linkedin.com/in/luis-fernando-alvarez-david-1a490a158"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex items-center gap-2 text-ctp-text hover:text-ctp-lavender"
+									className="flex items-center gap-2 text-link hover:text-link-hover"
 								>
-									<Linkedin className="h-5 w-5 text-ctp-mauve" />
+									<Linkedin className="h-5 w-5 text-accent-4" />
 									<span>linkedin.com/in/luis-fernando-alvarez-david</span>
 								</a>
 
@@ -53,9 +53,9 @@ export default function ContactPage() {
 									href="https://x.com/luis_fades"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex items-center gap-2 text-ctp-text hover:text-ctp-lavender"
+									className="flex items-center gap-2 text-link hover:text-link-hover"
 								>
-									<Twitter className="h-5 w-5 text-ctp-mauve" />
+									<Twitter className="h-5 w-5 text-accent-4" />
 									<span>x.com/luis_fades</span>
 								</a>
 							</div>
@@ -65,7 +65,7 @@ export default function ContactPage() {
 					<div className="mt-6">
 						<Link
 							href="/"
-							className="text-ctp-mauve hover:text-ctp-lavender hover:underline"
+							className="text-link hover:text-link hover:underline"
 						>
 							cd ..
 						</Link>

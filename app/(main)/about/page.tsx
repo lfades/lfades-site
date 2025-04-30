@@ -4,7 +4,7 @@ import { TerminalLine } from "@/components/terminal-line";
 
 export default function AboutPage() {
 	return (
-		<div className="min-h-screen bg-ctp-base text-ctp-text font-mono">
+		<div className="min-h-screen bg-pane text-text font-mono">
 			<Terminal path="~/about.md">
 				<div className="p-4">
 					<TerminalLine className="mb-4" text="cat about.md" />
@@ -12,21 +12,21 @@ export default function AboutPage() {
 					<div className="mb-4">
 						<Link
 							href="/"
-							className="text-ctp-mauve hover:text-ctp-lavender hover:underline"
+							className="text-link hover:text-link-hover hover:underline"
 						>
 							cd ..
 						</Link>
 					</div>
 
 					<div className="max-w-none">
-						<h1 className="text-2xl font-bold text-ctp-mauve mb-4">About me</h1>
+						<h1 className="text-2xl font-bold text-accent-4 mb-4">About me</h1>
 
 						<p className="mb-4">
 							Hello! I'm Luis, a passionate developer that spends his time
 							working with Next.js for work, fun, and <b>for the web</b>.
 						</p>
 
-						<h2 className="text-xl font-bold text-ctp-blue mt-6 mb-3">
+						<h2 className="text-xl font-bold text-accent-2 mt-6 mb-3">
 							Background
 						</h2>
 
@@ -50,7 +50,7 @@ export default function AboutPage() {
 							quite happy, relieved, and living the dream.
 						</p>
 
-						<h2 className="text-xl font-bold text-ctp-blue mt-6 mb-3">
+						<h2 className="text-xl font-bold text-accent-2 mt-6 mb-3">
 							Skills
 						</h2>
 						<p className="mb-4">
@@ -62,7 +62,7 @@ export default function AboutPage() {
 							make a 3D game.
 						</p>
 
-						<h2 className="text-xl font-bold text-ctp-blue mt-6 mb-3">
+						<h2 className="text-xl font-bold text-accent-2 mt-6 mb-3">
 							Philosophy
 						</h2>
 
@@ -77,7 +77,7 @@ export default function AboutPage() {
 					<div className="mt-6">
 						<Link
 							href="/"
-							className="text-ctp-mauve hover:text-ctp-lavender hover:underline"
+							className="text-link hover:text-link-hover hover:underline"
 						>
 							cd ..
 						</Link>
