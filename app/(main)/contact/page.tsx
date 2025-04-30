@@ -23,7 +23,7 @@ export default function ContactPage() {
 							<div className="space-y-3">
 								<a
 									href="mailto:me@lfades.com"
-									className="flex items-center gap-2 text-link hover:text-link-hover"
+									className="flex items-center gap-2 hover:text-link"
 								>
 									<Mail className="h-5 w-5 text-accent-4" />
 									<span>me@lfades.com</span>
@@ -33,7 +33,7 @@ export default function ContactPage() {
 									href="https://github.com/lfades"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex items-center gap-2 text-link hover:text-link-hover"
+									className="flex items-center gap-2 hover:text-link"
 								>
 									<Github className="h-5 w-5 text-accent-4" />
 									<span>github.com/lfades</span>
@@ -43,7 +43,7 @@ export default function ContactPage() {
 									href="https://www.linkedin.com/in/luis-fernando-alvarez-david-1a490a158"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex items-center gap-2 text-link hover:text-link-hover"
+									className="flex items-center gap-2 hover:text-link"
 								>
 									<Linkedin className="h-5 w-5 text-accent-4" />
 									<span>linkedin.com/in/luis-fernando-alvarez-david</span>
@@ -53,7 +53,7 @@ export default function ContactPage() {
 									href="https://x.com/luis_fades"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex items-center gap-2 text-link hover:text-link-hover"
+									className="flex items-center gap-2 hover:text-link"
 								>
 									<Twitter className="h-5 w-5 text-accent-4" />
 									<span>x.com/luis_fades</span>
