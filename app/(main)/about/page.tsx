@@ -68,7 +68,7 @@ export default function AboutPage() {
 					<Link href="/">cd ..</Link>
 				</div>
 
-				<TerminalLine className="mt-4" path="~/about.md" />
+				<TerminalLine className="mt-4" />
 			</div>
 		</Terminal>
 	)

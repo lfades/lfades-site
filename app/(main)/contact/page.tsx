@@ -63,7 +63,7 @@ export default function ContactPage() {
 					<Link href="/">cd ..</Link>
 				</div>
 
-				<TerminalLine className="mt-4" path="~/contact.md" />
+				<TerminalLine className="mt-4" />
 			</div>
 		</Terminal>
 	)
