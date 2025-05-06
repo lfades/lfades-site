@@ -1,4 +1,4 @@
-import Link from "next/link"
+import { Link } from "@/components/link"
 import { Terminal } from "@/components/terminal"
 import { TerminalLine } from "@/components/terminal-line"
 
@@ -9,12 +9,7 @@ export default function AboutPage() {
 				<TerminalLine className="mb-4" text="cat about.md" />
 
 				<div className="mb-4">
-					<Link
-						href="/"
-						className="text-link hover:text-link-hover hover:underline underline-offset-2"
-					>
-						cd ..
-					</Link>
+					<Link href="/">cd ..</Link>
 				</div>
 
 				<div className="max-w-none">
@@ -70,12 +65,7 @@ export default function AboutPage() {
 				</div>
 
 				<div className="mt-6">
-					<Link
-						href="/"
-						className="text-link hover:text-link-hover hover:underline underline-offset-2"
-					>
-						cd ..
-					</Link>
+					<Link href="/">cd ..</Link>
 				</div>
 
 				<TerminalLine className="mt-4" path="~/about.md" />

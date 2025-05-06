@@ -7,7 +7,7 @@ export function Theme() {
 	const { theme, setTheme } = useTheme()
 	return (
 		<>
-			<div className="text-1">Theme:</div>
+			<div className="text-accent-2">Theme:</div>
 			<div className="flex">
 				Catppuccin{" "}
 				<SunMoon

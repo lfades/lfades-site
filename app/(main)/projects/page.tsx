@@ -31,7 +31,7 @@ export default function ProjectsPage() {
 	]
 
 	return (
-		<div className="min-h-screen bg-ctp-base text-ctp-text font-mono">
+		<div className="bg-ctp-base text-ctp-text font-mono">
 			<Terminal path="~/projects">
 				<div className="p-4">
 					<div className="mb-4 text-ctp-green">

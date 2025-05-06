@@ -1,7 +1,7 @@
 import Image from "next/image"
-import Link from "next/link"
 import lfadesPhoto from "../public/lfades.jpg"
 import { Theme } from "./theme"
+import { Link } from "./link"
 
 export function Neofetch() {
 	return (
@@ -19,42 +19,41 @@ export function Neofetch() {
 				<div className="border-b border-surface-2 mb-2" />
 
 				<div className="grid grid-cols-[max-content_1fr] gap-1 gap-x-6">
-					<div className="text-1">OS:</div>
+					<div className="text-accent-2">OS:</div>
 					<div>Web Browser</div>
 
-					<div className="text-1">Host:</div>
+					<div className="text-accent-2">Host:</div>
 					<div>Vercel</div>
 
-					<div className="text-1">Kernel:</div>
+					<div className="text-accent-2">Kernel:</div>
 					<div>Next.js</div>
 
-					<div className="text-1">Uptime:</div>
+					<div className="text-accent-2">Uptime:</div>
 					<div>+12 years cooking</div>
 
-					<div className="text-1">Packages:</div>
+					<div className="text-accent-2">Packages:</div>
 					<div>I'll count them later</div>
 
-					<div className="text-1">Shell:</div>
+					<div className="text-accent-2">Shell:</div>
 					<div>I use neovim btw</div>
 
-					<div className="text-1">Resolution:</div>
+					<div className="text-accent-2">Resolution:</div>
 					<div>Responsive</div>
 
 					<Theme />
 
-					<div className="text-1">Terminal:</div>
+					<div className="text-accent-2">Terminal:</div>
 					<div>Wezterm</div>
 
-					<div className="text-1">Font:</div>
+					<div className="text-accent-2">Font:</div>
 					<div>Maple Mono</div>
 
-					<div className="text-1">Memory:</div>
+					<div className="text-accent-2">Memory:</div>
 					<div>
 						<Link
 							href="https://github.com/lfades"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-link hover:text-link-hover hover:underline underline-offset-2"
 						>
 							GitHub
 						</Link>
@@ -63,7 +62,6 @@ export function Neofetch() {
 							href="https://x.com/luis_fades"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-link hover:text-link-hover hover:underline underline-offset-2"
 						>
 							X
 						</Link>
@@ -72,7 +70,6 @@ export function Neofetch() {
 							href="https://www.linkedin.com/in/luis-fernando-alvarez-david-1a490a158"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-link hover:text-link-hover hover:underline underline-offset-2"
 						>
 							LinkedIn
 						</Link>
