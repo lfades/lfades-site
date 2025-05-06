@@ -1,10 +1,10 @@
-import Link from "next/link";
-import { Terminal } from "@/components/terminal";
-import { TerminalLine } from "@/components/terminal-line";
+import Link from "next/link"
+import { Terminal } from "@/components/terminal"
+import { TerminalLine } from "@/components/terminal-line"
 
 export default function AboutPage() {
 	return (
-		<div className="min-h-screen bg-pane text-text font-mono">
+		<div className="bg-pane text-text font-mono">
 			<Terminal path="~/about.md">
 				<div className="p-4">
 					<TerminalLine className="mb-4" text="cat about.md" />
@@ -87,5 +87,5 @@ export default function AboutPage() {
 				</div>
 			</Terminal>
 		</div>
-	);
+	)
 }

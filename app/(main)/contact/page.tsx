@@ -1,11 +1,11 @@
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
-import Link from "next/link";
-import { Terminal } from "@/components/terminal";
-import { TerminalLine } from "@/components/terminal-line";
+import { Mail, Github, Linkedin, Twitter } from "lucide-react"
+import Link from "next/link"
+import { Terminal } from "@/components/terminal"
+import { TerminalLine } from "@/components/terminal-line"
 
 export default function ContactPage() {
 	return (
-		<div className="min-h-screen bg-ctp-base text-ctp-text font-mono">
+		<div className="bg-ctp-base text-ctp-text font-mono">
 			<Terminal path="~/contact.md">
 				<div className="p-4">
 					<TerminalLine className="mb-4" text="cat contact.md" />
@@ -75,5 +75,5 @@ export default function ContactPage() {
 				</div>
 			</Terminal>
 		</div>
-	);
+	)
 }

@@ -1,8 +1,8 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from "react"
 
 interface TerminalProps {
-	children: ReactNode;
-	path?: string;
+	children: ReactNode
+	path?: string
 }
 
 export function Terminal({ children, path }: TerminalProps) {
@@ -21,5 +21,5 @@ export function Terminal({ children, path }: TerminalProps) {
 			</div>
 			<div className="p-4 overflow-auto">{children}</div>
 		</div>
-	);
+	)
 }

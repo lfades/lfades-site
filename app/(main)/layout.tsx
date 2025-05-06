@@ -1,11 +1,9 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from "react"
 
 export default function Layout({
 	children,
 }: {
-	children: ReactNode;
+	children: ReactNode
 }) {
-	return (
-		<div className="min-h-screen bg-pane text-text font-mono">{children}</div>
-	);
+	return <div className="font-mono">{children}</div>
 }

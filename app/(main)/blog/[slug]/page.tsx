@@ -1,28 +1,28 @@
-import Link from "next/link";
-import { Terminal } from "@/components/terminal";
-import { blogPosts } from "@/data/blog-posts";
-import { notFound } from "next/navigation";
+import Link from "next/link"
+import { Terminal } from "@/components/terminal"
+import { blogPosts } from "@/data/blog-posts"
+import { notFound } from "next/navigation"
 
 interface BlogPostPageProps {
-	params: Promise<{ slug: string }>;
+	params: Promise<{ slug: string }>
 }
 
 export function generateStaticParams() {
 	return blogPosts.map((post) => ({
 		slug: post.slug,
-	}));
+	}))
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-	const { slug } = await params;
-	const post = blogPosts.find((post) => post.slug === slug);
+	const { slug } = await params
+	const post = blogPosts.find((post) => post.slug === slug)
 
 	if (!post) {
-		notFound();
+		notFound()
 	}
 
 	return (
-		<div className="min-h-screen bg-ctp-base text-ctp-text font-mono">
+		<div className="bg-ctp-base text-ctp-text font-mono">
 			<Terminal path={`~/blog/${post.slug}`}>
 				<div className="p-4">
 					<div className="mb-4 text-ctp-green">
@@ -76,5 +76,5 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 				</div>
 			</Terminal>
 		</div>
-	);
+	)
 }

@@ -1,10 +1,10 @@
-import Link from "next/link";
-import { Terminal } from "@/components/terminal";
-import { blogPosts } from "@/data/blog-posts";
+import Link from "next/link"
+import { Terminal } from "@/components/terminal"
+import { blogPosts } from "@/data/blog-posts"
 
 export default function BlogPage() {
 	return (
-		<div className="min-h-screen bg-ctp-base text-ctp-text font-mono">
+		<div className="bg-ctp-base text-ctp-text font-mono">
 			<Terminal path="~/blog">
 				<div className="p-4">
 					<div className="mb-4 text-ctp-green">
@@ -53,5 +53,5 @@ export default function BlogPage() {
 				</div>
 			</Terminal>
 		</div>
-	);
+	)
 }
