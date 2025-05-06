@@ -19,7 +19,7 @@ export function Terminal({ children, path }: TerminalProps) {
 				</div>
 				<div className="w-14" />
 			</div>
-			<div className="p-4 overflow-auto">{children}</div>
+			<div className="p-4 md:p-8 overflow-auto">{children}</div>
 		</div>
 	)
 }

@@ -5,19 +5,17 @@ import { TerminalLine } from "@/components/terminal-line"
 export default function ProjectsPage() {
 	return (
 		<Terminal path="~/projects">
-			<div className="p-4">
-				<TerminalLine className="mt-4" path="~/projects" text="ls -la" />
+			<TerminalLine className="mb-4" path="~/projects" text="ls -la" />
 
-				<div className="space-y-6">
-					<Project />
-				</div>
-
-				<div className="mt-6">
-					<Link href="/">cd ..</Link>
-				</div>
-
-				<TerminalLine className="mt-4" path="~/projects" />
+			<div className="space-y-6">
+				<Project />
 			</div>
+
+			<div className="mt-8">
+				<Link href="/">cd ..</Link>
+			</div>
+
+			<TerminalLine className="mt-4" path="~/projects" />
 		</Terminal>
 	)
 }
