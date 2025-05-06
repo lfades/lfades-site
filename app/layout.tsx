@@ -12,7 +12,7 @@ const mapleMono = localFont({
 })
 
 export const metadata: Metadata = {
-	title: "LFades | Dev | Always cooking",
+	title: "LFades",
 	description: "Personal website of Luis Alvarez.",
 }
 
