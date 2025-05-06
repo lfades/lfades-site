@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 export function TerminalLine({
 	path = "~",
@@ -10,9 +10,9 @@ export function TerminalLine({
 			<span className="text-3">luis@lfades</span>:
 			<span className="text-accent-4">{path}</span>$ {text || <Cursor />}
 		</div>
-	);
+	)
 }
 
 function Cursor() {
-	return <span className="text-cursor">█</span>;
+	return <span className="text-cursor">█</span>
 }

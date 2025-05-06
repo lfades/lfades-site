@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import lfadesPhoto from "../public/lfades.jpg";
-import { Theme } from "./theme";
+import Image from "next/image"
+import Link from "next/link"
+import lfadesPhoto from "../public/lfades.jpg"
+import { Theme } from "./theme"
 
 export function Neofetch() {
 	return (
@@ -109,5 +109,5 @@ export function Neofetch() {
 				</div>
 			</div>
 		</div>
-	);
+	)
 }

@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { Terminal } from "@/components/terminal";
-import { Neofetch } from "@/components/neofetch";
-import { TerminalLine } from "@/components/terminal-line";
+import Link from "next/link"
+import { Terminal } from "@/components/terminal"
+import { Neofetch } from "@/components/neofetch"
+import { TerminalLine } from "@/components/terminal-line"
 
 export default function Home() {
 	return (
@@ -43,5 +43,5 @@ export default function Home() {
 				<TerminalLine />
 			</div>
 		</Terminal>
-	);
+	)
 }

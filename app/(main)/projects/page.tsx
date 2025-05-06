@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { Terminal } from "@/components/terminal";
+import Link from "next/link"
+import { Terminal } from "@/components/terminal"
 
 export default function ProjectsPage() {
 	const projects = [
@@ -28,7 +28,7 @@ export default function ProjectsPage() {
 			tech: ["Next.js", "TypeScript", "Tailwind CSS"],
 			link: "https://github.com/luisalvarez/terminal-portfolio",
 		},
-	];
+	]
 
 	return (
 		<div className="min-h-screen bg-ctp-base text-ctp-text font-mono">
@@ -88,5 +88,5 @@ export default function ProjectsPage() {
 				</div>
 			</Terminal>
 		</div>
-	);
+	)
 }

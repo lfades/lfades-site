@@ -1,11 +1,11 @@
 export const blogPosts = [
-  {
-    title: "Building a Terminal-Style Portfolio with Next.js and Catppuccin",
-    slug: "terminal-portfolio-nextjs",
-    date: "2023-11-15",
-    prev: null,
-    next: "react-hooks-guide",
-    content: `
+	{
+		title: "Building a Terminal-Style Portfolio with Next.js and Catppuccin",
+		slug: "terminal-portfolio-nextjs",
+		date: "2023-11-15",
+		prev: null,
+		next: "react-hooks-guide",
+		content: `
       <p>Creating a terminal-style portfolio website can be a fun way to showcase your developer skills while paying homage to the command line interface that many of us use daily.</p>
       
       <h2>Why Terminal Style?</h2>
@@ -35,14 +35,14 @@ export const blogPosts = [
       <h2>Conclusion</h2>
       <p>A terminal-style portfolio is not just visually appealing but also functional and memorable. It's a creative way to stand out while showcasing your technical skills.</p>
     `,
-  },
-  {
-    title: "A Comprehensive Guide to React Hooks",
-    slug: "react-hooks-guide",
-    date: "2023-10-22",
-    prev: "terminal-portfolio-nextjs",
-    next: "typescript-best-practices",
-    content: `
+	},
+	{
+		title: "A Comprehensive Guide to React Hooks",
+		slug: "react-hooks-guide",
+		date: "2023-10-22",
+		prev: "terminal-portfolio-nextjs",
+		next: "typescript-best-practices",
+		content: `
       <p>React Hooks have revolutionized how we write React components, allowing us to use state and other React features without writing classes.</p>
       
       <h2>useState: Managing State in Functional Components</h2>
@@ -80,14 +80,14 @@ export const blogPosts = [
       <h2>Conclusion</h2>
       <p>React Hooks provide a more direct API to React concepts you already know: props, state, context, refs, and lifecycle. They offer a more ergonomic way to reuse stateful logic between components.</p>
     `,
-  },
-  {
-    title: "TypeScript Best Practices for Modern Web Development",
-    slug: "typescript-best-practices",
-    date: "2023-09-18",
-    prev: "react-hooks-guide",
-    next: "nextjs-server-components",
-    content: `
+	},
+	{
+		title: "TypeScript Best Practices for Modern Web Development",
+		slug: "typescript-best-practices",
+		date: "2023-09-18",
+		prev: "react-hooks-guide",
+		next: "nextjs-server-components",
+		content: `
       <p>TypeScript has become an essential tool for modern web development, providing type safety and improved developer experience. Here are some best practices to follow when working with TypeScript.</p>
       
       <h2>Use Strict Mode</h2>
@@ -136,14 +136,14 @@ const name: string = "John";</code></pre>
       <h2>Conclusion</h2>
       <p>Following these TypeScript best practices will help you write more maintainable, robust, and error-free code. TypeScript is not just about adding types; it's about improving the overall quality of your codebase.</p>
     `,
-  },
-  {
-    title: "Understanding Next.js Server Components",
-    slug: "nextjs-server-components",
-    date: "2023-08-05",
-    prev: "typescript-best-practices",
-    next: "web-accessibility",
-    content: `
+	},
+	{
+		title: "Understanding Next.js Server Components",
+		slug: "nextjs-server-components",
+		date: "2023-08-05",
+		prev: "typescript-best-practices",
+		next: "web-accessibility",
+		content: `
       <p>Next.js 13 introduced a revolutionary feature: React Server Components. This new paradigm changes how we think about rendering React applications.</p>
       
       <h2>What Are Server Components?</h2>
@@ -192,14 +192,14 @@ export default async function UserProfile({ userId }) {
       <h2>Conclusion</h2>
       <p>Server Components represent a significant shift in how we build React applications, especially in the Next.js ecosystem. By understanding when and how to use them, you can create more efficient and performant web applications.</p>
     `,
-  },
-  {
-    title: "Web Accessibility: Building Inclusive Digital Experiences",
-    slug: "web-accessibility",
-    date: "2023-07-12",
-    prev: "nextjs-server-components",
-    next: null,
-    content: `
+	},
+	{
+		title: "Web Accessibility: Building Inclusive Digital Experiences",
+		slug: "web-accessibility",
+		date: "2023-07-12",
+		prev: "nextjs-server-components",
+		next: null,
+		content: `
       <p>Web accessibility is about ensuring that websites and web applications are usable by everyone, including people with disabilities. It's not just a nice-to-have feature; it's a necessity for creating truly inclusive digital experiences.</p>
       
       <h2>Why Accessibility Matters</h2>
@@ -236,5 +236,5 @@ export default async function UserProfile({ userId }) {
       <h2>Conclusion</h2>
       <p>Building accessible websites is not just about compliance; it's about creating better experiences for all users. By incorporating accessibility from the start of your projects, you can ensure that your digital products are inclusive and usable by everyone.</p>
     `,
-  },
+	},
 ]

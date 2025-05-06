@@ -1,10 +1,10 @@
-"use client";
+"use client"
 
-import { SunMoon } from "lucide-react";
-import { useTheme } from "next-themes";
+import { SunMoon } from "lucide-react"
+import { useTheme } from "next-themes"
 
 export function Theme() {
-	const { theme, setTheme } = useTheme();
+	const { theme, setTheme } = useTheme()
 	return (
 		<>
 			<div className="text-1">Theme:</div>
@@ -16,5 +16,5 @@ export function Theme() {
 				/>
 			</div>
 		</>
-	);
+	)
 }
