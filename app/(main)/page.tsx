@@ -26,7 +26,7 @@ export default function Home() {
 					<div>
 						<Link
 							href="/about"
-							className="text-link hover:text-link-hover underline"
+							className="text-link hover:text-link-hover underline underline-offset-2"
 						>
 							about.md
 						</Link>
@@ -34,7 +34,7 @@ export default function Home() {
 					<div>
 						<Link
 							href="/contact"
-							className="text-link hover:text-link-hover underline"
+							className="text-link hover:text-link-hover underline underline-offset-2"
 						>
 							contact.md
 						</Link>
