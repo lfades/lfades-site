@@ -27,8 +27,8 @@ export default function AboutPage() {
 					I've been programming since school, my first project was a search
 					dashboard for the library of my school that I built with Django. My
 					first job was working for 5 years in my own company, and although it
-					was a finantially irresponsable decision because I was young and
-					stupid, it thought me that I can do anything.
+					was a finantially irresponsible decision because I was young and
+					stupid, it taught me that I can do anything.
 				</p>
 				<p className="mb-4">
 					I wanted to work at Zeit (now Vercel) so badly because one of the
